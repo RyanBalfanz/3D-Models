@@ -93,13 +93,22 @@ color("gray")
 
 
 // Micro SD Card Slot
-micro_sd_height = 10;
-micro_sd_width = 10;
+micro_sd_height = 12;
+micro_sd_width = 12;
 micro_sd_protrusion = -1;
 color("gray")
-    translate([2.75/2, 16.9-micro_sd_height/2])
-    linear_extrude(height = 1)
+    translate([1, 16.9-micro_sd_height/2])
+    linear_extrude(height = 1.6)
     square([micro_sd_width, micro_sd_height], center = false);
+
+// Micro SD Card
+micro_sd_card_height = 11;
+micro_sd_card_width = 15;
+micro_sd_card_protrusion = -2;
+color("red")
+    translate([micro_sd_card_protrusion, 16.9-micro_sd_card_height/2, 0.5])
+    linear_extrude(height = 1)
+    square([micro_sd_card_width, micro_sd_card_height], center = false);
 
 
 // HDMI
