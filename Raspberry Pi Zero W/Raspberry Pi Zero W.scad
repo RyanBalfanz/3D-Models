@@ -87,8 +87,8 @@ gpio_height = 5;
 gpio_width = 51;
 gpio_to_hole_offset = 29;
 color("gray")
-    translate([hole_offset+gpio_to_hole_offset-gpio_width/2, height-hole_offset-gpio_height/2, -depth])
-    linear_extrude(height = (12+depth)/2)
+    translate([hole_offset+gpio_to_hole_offset-gpio_width/2, height-hole_offset-gpio_height/2])
+    linear_extrude(height = 6)
     square([gpio_width, gpio_height], center = false);
 
 
@@ -97,8 +97,8 @@ micro_sd_height = 10;
 micro_sd_width = 10;
 micro_sd_protrusion = -1;
 color("gray")
-    translate([2.75/2, 16.9-micro_sd_height/2, -depth])
-    linear_extrude(height = 3*depth)
+    translate([2.75/2, 16.9-micro_sd_height/2])
+    linear_extrude(height = 1)
     square([micro_sd_width, micro_sd_height], center = false);
 
 
