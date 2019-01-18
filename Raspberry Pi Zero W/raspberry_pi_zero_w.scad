@@ -1,4 +1,4 @@
-$fn=30;
+$fn=300;
 
 echo(version=version());
 
