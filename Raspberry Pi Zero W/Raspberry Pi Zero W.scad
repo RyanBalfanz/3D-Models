@@ -5,7 +5,7 @@ echo(version=version());
 // simple 2D -> 3D extrusion of a rectangle
 height = 30;
 width = 65;
-depth = 1.5;
+depth = 1.6;
 corner_radius = 3.0;
 hole_offset = 3.5;
 hole_diameter = 2.75;
